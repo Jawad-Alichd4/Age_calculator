@@ -1,0 +1,23 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+#FirstDiv{
+    background-color: black;
+    width: 200px;
+    height: 70px; 
+}
+  #mainDiv #firstDiv .InFirst{
+    width: 50px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: brown;
+}
+.inputbtn{
+    height: 20px;
+    width: 30px;
+}

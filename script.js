@@ -1,0 +1,20 @@
+
+var calculateButton = document.getElementById("CalculateBtn");
+// var age = currentDate - dateInput;
+    // console.log(age)
+    // var years = currentDate.getFullYear - dateInput.getFullYear;
+    // console.log(years);
+
+function calculateAge() {
+    var currentDate = new Date();
+    var year = currentDate.getFullYear();
+    var month = currentDate.getMonth();
+    var day = currentDate.getDate();
+    var dateInput = document.getElementById("DateInput");
+   var myageInMilliseconds = dateInput - currentDate;
+   var myageIndays = myageInMilliseconds/(1000 * 60 * 60 * 24);
+
+    console.log(myageIndays);
+
+
+}
