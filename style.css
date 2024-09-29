@@ -4,18 +4,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(126, 126, 207);
 }
 #FirstDiv{
     background-color: black;
-    width: 200px;
+    width: 300px;
     height: 70px; 
+    border-radius: 10px;
 }
-  #mainDiv #firstDiv .InFirst{
-    width: 50px;
-    height: 30px;
+ .InFirst{
+    width: 100px;
+    height: 40px;
     margin-top: 20px;
-    background-color: brown;
+    background-color: rgb(247, 245, 245);
+    text-align: center;
+    border-radius: 10px;
 }
 .inputbtn{
     height: 20px;

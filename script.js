@@ -10,11 +10,14 @@ function calculateAge() {
     var year = currentDate.getFullYear();
     var month = currentDate.getMonth();
     var day = currentDate.getDate();
-    var dateInput = document.getElementById("DateInput");
-   var myageInMilliseconds = dateInput - currentDate;
-   var myageIndays = myageInMilliseconds/(1000 * 60 * 60 * 24);
+    var dateInput = document.getElementById("DateInput").nodeValue;
+   var myageInMilliseconds = currentDate - dateInput;
 
-    console.log(myageIndays);
+   var myageIndays = myageInMilliseconds/(1000 * 60 * 60 * 24);
+   var myageInMonths = myageInMilliseconds/(1000 * 60 * 60);
+   var myageInYears = myageInMilliseconds/(1000 * 60);
+
+    console.log(myageInYears);
 
 
 }
