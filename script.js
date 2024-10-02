@@ -19,30 +19,27 @@ function calculateAge() {
     // calculating days months and years
 
    var myageInMilliseconds = currentDate - dateInputInOrder;
+   console.log(currentDate.getFullYear())
 
-   var myageIndays = Math.floor(myageInMilliseconds / (1000 * 60 * 60 * 24));
-   var myageInMonths = myageIndays / 30;
-   var myageInYears = myageInMonths / 12;
-//    console.log(currentDate);
-//    console.log(myageInYears)
+   var myageIndays = currentDate.getDate() - dateInputInOrder.getDate();
+   var myageInMonths = currentDate.getMonth() - dateInputInOrder.getMonth();
+   var myageInYears = currentDate.getFullYear() - dateInputInOrder.getFullYear();
 
-    // console.log(myageInMonths);
-    // console.log(myageIndays);
+   console.log("years" + myageInYears)
+
+    console.log("months" + myageInMonths);
+    console.log("days" + myageIndays);
     // console.log(myageInMilliseconds);
 
     
-   var agelist = document.getAnimations("listItems")
-    var li1 = document.createElement('li');
-    li1.value = myageInYears;
-    agelist.appendChild('li');
+var yearsbtn = document.getElementById("yearsbtn");
+yearsbtn.innerHTML = myageInYears;
 
-    var li2 = document.createElement('li');
-    li2.value = myageInMonths;
-    agelist.appendChild('li')
+var monthssbtn = document.getElementById("monthsbtn");
+monthssbtn.innerHTML = myageInMonths;
 
-    var li3 = document.createElement('li');
-    li3.value = myageIndays;
-    agelist.appendChild('li');
+var daysbtn = document.getElementById("daysbtn");
+daysbtn.innerHTML = myageIndays;
 
     
 
