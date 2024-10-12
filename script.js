@@ -25,6 +25,16 @@ function calculateAge() {
    var myageInMonths = currentDate.getMonth() - dateInputInOrder.getMonth();
    var myageInYears = currentDate.getFullYear() - dateInputInOrder.getFullYear();
 
+   if(myageIndays  < 0) {
+    myageInMonths--;
+    myageIndays = 30 + myageIndays;
+   }
+
+   if(myageInMonths < 0) {
+    myageInYears--;
+    myageInMonths = 12 + myageInMonths;
+   }
+
    console.log("years" + myageInYears)
 
     console.log("months" + myageInMonths);
