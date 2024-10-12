@@ -43,13 +43,13 @@ function calculateAge() {
 
     
 var yearsbtn = document.getElementById("yearsbtn");
-yearsbtn.innerHTML += myageInYears;
+yearsbtn.innerHTML ="Years :" + myageInYears;
 
 var monthssbtn = document.getElementById("monthsbtn");
-monthssbtn.innerHTML += myageInMonths;
+monthssbtn.innerHTML = "Months :" + myageInMonths;
 
 var daysbtn = document.getElementById("daysbtn");
-daysbtn.innerHTML += myageIndays;
+daysbtn.innerHTML = "Days :" + myageIndays;
 
     
 
